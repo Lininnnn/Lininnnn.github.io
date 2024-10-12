@@ -40,6 +40,7 @@ const resetProcessed = function () {
     }
   });
 };
+
 export const ModeToggle = {
   modeToggleButton_dom: null,
   iconDom: null,
@@ -108,15 +109,8 @@ export const ModeToggle = {
   },
 
   initModeStatus() {
-    const styleStatus = main.getStyleStatus();
-
-    if (styleStatus) {
-      styleStatus.isDark ? this.enableDarkMode() : this.enableLightMode();
-    } else {
-      this.isDarkPrefersColorScheme().matches
-        ? this.enableDarkMode()
-        : this.enableLightMode();
-    }
+    // �Ƴ�ԭ���жϣ�ǿ������Ϊ��ɫģʽ
+    this.enableDarkMode();
   },
 
   initModeToggleButton() {
@@ -127,10 +121,11 @@ export const ModeToggle = {
   },
 
   initModeAutoTrigger() {
-    const isDarkMode = this.isDarkPrefersColorScheme();
-    isDarkMode.addEventListener("change", (e) => {
-      e.matches ? this.enableDarkMode() : this.enableLightMode();
-    });
+    // �Ƴ��Զ��л����ܣ�ǿ��ʹ����ɫģʽ
+    // const isDarkMode = this.isDarkPrefersColorScheme();
+    // isDarkMode.addEventListener("change", (e) => {
+    //   e.matches ? this.enableDarkMode() : this.enableLightMode();
+    // });
   },
 
   async init() {
@@ -150,12 +145,10 @@ export const ModeToggle = {
       typeof theme.mermaid.style.dark !== "undefined"
         ? theme.mermaid.style.dark
         : "dark";
-    this.initModeStatus();
+    this.initModeStatus();  // ǿ�Ƶ�����ɫģʽ
     this.initModeToggleButton();
-    this.initModeAutoTrigger();
-    try {
-      await saveOriginalData().catch(console.error);
-    } catch (error) {}
+    // �Ƴ��Զ�����ԭ�е��ã�ǿ����������
+    await saveOriginalData().catch(console.error);
   },
 };
 
