@@ -6446,7 +6446,7 @@ html.is-animating .scroll-progress-bar {
   min-height: 90vh;
 }
 .home-banner-container .content .description {
-  font-size: 3.5rem;
+  font-size: 0.1rem;
   line-height: 1.2;
   color: var(--home-banner-text-color);
 }
@@ -6457,15 +6457,15 @@ html.is-animating .scroll-progress-bar {
   font-weight: 350;
 }
 .home-banner-container .content .description p i {
-  font-size: 1.8rem;
+  font-size: 0.1rem;
   font-style: normal;
 }
 .home-banner-container .content .description p span {
-  font-size: 1.89rem;
+  font-size: 0.105rem;
 }
 @media (max-width: 768px) {
   .home-banner-container .content .description {
-    font-size: 3.15rem;
+    font-size: 0.09rem;
   }
 }
 .image-viewer-container {
