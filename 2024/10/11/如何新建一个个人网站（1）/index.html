@@ -13,20 +13,20 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="http://example.com/2024/10/11/如何新建一个个人网站/"/>
+    <link rel="canonical" href="http://example.com/2024/10/11/如何新建一个个人网站（1）/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
         <meta name="description" content="记录了如何新建一个个人网站，并使用Hexo搭建博客。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="如何新建一个个人网站">
-<meta property="og:url" content="http://example.com/2024/10/11/%E5%A6%82%E4%BD%95%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/index.html">
+<meta property="og:title" content="如何新建一个个人网站（1）">
+<meta property="og:url" content="http://example.com/2024/10/11/%E5%A6%82%E4%BD%95%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%EF%BC%881%EF%BC%89/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="记录了如何新建一个个人网站，并使用Hexo搭建博客。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-10-11T08:37:02.000Z">
-<meta property="article:modified_time" content="2024-10-14T05:00:02.705Z">
+<meta property="article:modified_time" content="2024-11-27T01:52:09.235Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="编程教程">
 <meta property="article:tag" content="学习记录">
@@ -42,7 +42,7 @@
     
     <title>
         
-            如何新建一个个人网站 -
+            如何新建一个个人网站（1） -
         
         WELCOME LININ&#39;S BLOG
     </title>
@@ -371,7 +371,7 @@
         <div class="label text-third-text-color text-sm">Categories</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">1</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">2</div>
         <div class="label text-third-text-color text-sm">Posts</div>
     </a>
 </div>
@@ -396,7 +396,7 @@
         <div class="article-title relative w-full">
             
                 <div class="w-full flex items-center pt-6 justify-start">
-                    <h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">如何新建一个个人网站</h1>
+                    <h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">如何新建一个个人网站（1）</h1>
                 </div>
             
             </div>
@@ -422,8 +422,8 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2024-10-14 13:02</span>
-            <span class="mobile">2024-10-14 13:02</span>
+            <span class="desktop">2024-11-27 09:52:09</span>
+            <span class="mobile">2024-11-27 09:52:09</span>
             <span class="hover-info">Updated</span>
         </span>
     
@@ -535,7 +535,7 @@
 <ul>
 <li>打开本地git bash，输入以下命令：</li>
 </ul>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;username&quot;   # username是你的GitHub用户名，注意大小写</span><br><span class="line">git config --global user.email &quot;email&quot;     # email是注册 GitHub的邮箱</span><br><span class="line">ssh-keygen -t ed25519 -C &quot;email&quot;           # 生成ed25519密钥对，email同上</span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;username&quot;   # username是你的GitHub用户名，注意大小写</span><br><span class="line">git config --global user.email &quot;email&quot;     # email是注册 GitHub的邮箱</span><br><span class="line">ssh-keygen -t ed25519 -C &quot;email&quot;           # 生成ed25519密钥对，email同上</span><br></pre></td></tr></table></figure></div>
 
 <ul>
 <li><p>默认密钥对在用户目录的 .ssh 目录下，在该目录你可以看到 id_rsa 和 id_rsa.pub ，使用文本编辑器打开 id_rsa.pub 文件并复制</p>
@@ -545,7 +545,7 @@
 <li><p>回到本地Git bash，输入以下命令：</p>
 </li>
 </ul>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com     </span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com     </span><br></pre></td></tr></table></figure></div>
 <p>-出现一个hostname 提示输入 yes 回车<br>-ps：看见 “Hi username! You’ve successfully authenticated, but GitHub does not provide shell access.” 则说明连接成功</p>
 <p>最后修改修改 Blog 目录下的 Hexo 全局配置文件 _config.yml 的 deploy 字段</p>
 <div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git   # 部署类型</span><br><span class="line">  repo: https://github.com/username/username.github.io.git   # username是Github用户名</span><br><span class="line">  branch: master   # 远程分支</span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
@@ -562,18 +562,18 @@
             <div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
                 <div class="article-copyright-info-container">
     <ul>
-        <li><strong>Title:</strong> 如何新建一个个人网站</li>
+        <li><strong>Title:</strong> 如何新建一个个人网站（1）</li>
         <li><strong>Author:</strong> Linin</li>
         <li><strong>Created at
                 :</strong> 2024-10-11 16:37:02</li>
         
             <li>
                 <strong>Updated at
-                    :</strong> 2024-10-14 13:00:02
+                    :</strong> 2024-11-27 09:52:09
             </li>
         
         <li>
-            <strong>Link:</strong> http://example.com/2024/10/11/如何新建一个个人网站/
+            <strong>Link:</strong> http://example.com/2024/10/11/如何新建一个个人网站（1）/
         </li>
         <li>
             <strong>
@@ -607,6 +607,26 @@
 
         
 
+        
+            <div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
+                
+                    <div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+                        <a class="prev"
+                        rel="prev"
+                        href="/2024/11/27/vscode%E4%BD%BF%E7%94%A8%E7%9A%84%E4%BD%93%E4%BC%9A/"
+                        >
+                            <span class="left arrow-icon flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </span>
+                            <span class="title flex justify-center items-center">
+                                <span class="post-nav-title-item">VSCode使用的体会</span>
+                                <span class="post-nav-item">Prev posts</span>
+                            </span>
+                        </a>
+                    </div>
+                
+                
+            </div>
         
 
 
@@ -661,7 +681,7 @@
             <div class="post-toc-wrap">
     <div class="post-toc">
         <div class="toc-title">On this page</div>
-        <div class="page-title">如何新建一个个人网站</div>
+        <div class="page-title">如何新建一个个人网站（1）</div>
         <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E5%AE%89%E8%A3%85Node-js%E5%92%8Cnpm"><span class="nav-text">1. 安装Node.js和npm</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E5%AE%89%E8%A3%85Git"><span class="nav-text">2. 安装Git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-npm%E6%8D%A2%E6%BA%90"><span class="nav-text">3. npm换源</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E4%BB%A3%E7%A0%81%E7%BC%96%E8%BE%91%E5%99%A8vscode%E6%8E%A8%E8%8D%90"><span class="nav-text">4. 代码编辑器vscode推荐</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-Hexo%E7%9A%84%E5%AE%89%E8%A3%85"><span class="nav-text">5. Hexo的安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-Hexo%E7%9A%84%E5%88%9D%E5%A7%8B%E5%8C%96"><span class="nav-text">6. Hexo的初始化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-%E4%B8%8A%E4%BC%A0%E4%BD%A0%E7%9A%84%E5%8D%9A%E5%AE%A2%E8%87%B3github"><span class="nav-text">7.上传你的博客至github</span></a></li></ol>
 
     </div>
@@ -695,11 +715,11 @@
                 
                 <p class="post-count space-x-0.5">
                     <span>
-                        1 posts in total
+                        2 posts in total
                     </span>
                     
                         <span>
-                            1.3k words in total
+                            1.4k words in total
                         </span>
                     
                 </p>
